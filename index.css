@@ -1,0 +1,10 @@
+.partner_logo {
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+    aspect-ratio: 3/1.5;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+}
+.partner_logo:hover {
+    filter: grayscale(0%);
+}
