@@ -13,7 +13,7 @@
           colors: {
             bgPrimary: '#F3F4F6', // background primary
             bgSecondary: '#DADBDD', // background secondary
-            primary: '#000000', // button color / icon hover
+            primary: '#1e3b2a', // button color / icon hover
             secondary: '#1E7D3E', // button color / icon hover
             tertiary: '#A3A3A3', // button color / icon hover
             border: '#484848', // border / line color
@@ -31,15 +31,15 @@
 
   <!-- Nav -->
   <nav
-    class="bg-gradient-to-bl from-stone-900	 to-slate-800  w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    class="bg-gradient-to-bl from-stone-900	fixed to-slate-800  w-full z-50 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="assets/inovuslogo.png" class="h-8" alt="Flowbite Logo">
+      <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="assets/inovuslogo.png" class="h-11" alt="Flowbite Logo">
         <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Inovus Labs IEDC</span> -->
       </a>
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
         <button type="button"
-          class="text-white bg-gradient-to-tr from-stone-900	 to-slate-800 hover:bg-gradient-to-bl from-stone-900	to-slate-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">Register
+          class="text-white bg-gradient-to-tr from-stone-900  to-slate-800 hover:bg-gradient-to-bl from-stone-900	to-slate-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">Register
           Now</button>
         <button data-collapse-toggle="navbar-sticky" type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -56,26 +56,30 @@
           class="flex flex-col p-4 md:p-0 mt-4 font-medium  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
           <li>
             <a href="#"
-              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              class="block py-2 px-3 text-white bg-blue-700 hover:text-secondary rounded md:bg-transparent md:p-0 "
               aria-current="page">Home</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            <a href="#about"
+              class="block py-2 px-3 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary text-white ">About Us</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+            <a href="#event"
+              class="block py-2 px-3 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary text-white">About Event</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+            <a href="#schedule"
+              class="block py-2 px-3 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary text-white">Schedules</a>
+          </li>
+          <li>
+            <a href="#locate"
+              class="block py-2 px-3 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary text-white">Locate</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
+  
   <!-- landing -->
   <div class="relative h-screen overflow-hidden">
     <!-- Video background -->
@@ -92,7 +96,7 @@
       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <h1
           class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-          Step One; <br> IoT & Robotics</h1>
+          Step One; <br>Arduino Workshop</h1>
         <p class="mb-8 text-lg font-normal text-gray-100 lg:text-xl sm:px-16 xl:px-48 ">Join our
           engaging IoT workshop where you'll unlock the exciting world of smart technology and innovation!</p>
         <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
@@ -119,12 +123,12 @@
     </div>
   </div>
 
-  <section class="w-full h-full items-center justify-center flex">
-    <!-- <iframe src="https://studio.d-id.com/agents/share?id=agt_E3W6Xloo&key=WjI5dloyeGxMVzloZFhSb01ud3hNVE0zT1RFeU1qSTBOamMyTVRBd01qVXpPVFk2VFV0cmVsZEliMHhSZUY4dFkyOXVZazEzYjA5cg==" frameborder="0" class="w-96 h-96 items-center justify-center flex"></iframe> -->
-  </section>
+  <!-- <section class="w-full h-full items-center justify-center flex">
+    <iframe src="https://studio.d-id.com/agents/share?id=agt_E3W6Xloo&key=WjI5dloyeGxMVzloZFhSb01ud3hNVE0zT1RFeU1qSTBOamMyTVRBd01qVXpPVFk2VFV0cmVsZEliMHhSZUY4dFkyOXVZazEzYjA5cg==" frameborder="0" class="w-96 h-96 items-center justify-center flex"></iframe>
+  </section> -->
 
   <!-- about Us -->
-  <section class="bg-gradient-to-br from-stone-900	 to-slate-800">
+  <section class="bg-gradient-to-br from-stone-900	 to-slate-800 " id="about">
     <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
       <img class="w-full dark:hidden"
         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg" alt="dashboard image">
@@ -150,15 +154,15 @@
     </div>
   </section>
   <!-- about event -->
-  <section class="bg-gradient-to-tr from-stone-900	to-slate-800">
+  <section class="bg-gradient-to-tr from-stone-900	to-slate-800" id="event">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <h1 class="mb-4 text-4xl font-extrabold text-white px-5 pt-10 text-center">About <span class="text-secondary">StepOne</span></h1>
         <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tempore repudiandae sed neque, temporibus alias libero quo culpa laboriosam, possimus illum fugiat quaerat nobis incidunt nesciunt voluptatum omnis ex consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptates omnis, hic enim atque obcaecati dignissimos recusandae, vero ex nesciunt sapiente asperiores dolores aliquid earum fugiat sed vel. Maiores, architecto.</p>
     </div>
 </section>
   <!-- about event shedule -->
-  <section class="bg-gradient-to-br from-stone-900	to-slate-800">
-    <h1 class="mb-4 text-4xl font-extrabold text-white px-5 pt-10 text-center"><span class="text-secondary">About</span> Event shedule</h1>      
+  <section class="bg-gradient-to-br from-stone-900	to-slate-800" id="schedule">
+    <h1 class="mb-4 text-4xl font-extrabold text-white px-5 pt-10 text-center"><span class="text-secondary">About</span> Event schedule</h1>      
     <div class="py-8 px-4 sm:py-16 lg:px-6 md:items-center justify-center flex">
       <ol class="relative border-s border-gray-200 dark:border-gray-700">
         <li class="mb-10 ms-4">
@@ -238,7 +242,7 @@
     </div>
   </section>
 <!-- Location -->
-<section class="lg:p-10 p-4 bg-gradient-to-tr from-stone-900	to-slate-800">
+<section class="lg:p-10 p-4 bg-gradient-to-tr from-stone-900	to-slate-800" id="locate">
   <div class="mx-auto max-w-screen-xl text-left w-full p-4 lg:mb-4">
       
       <div class="mb-16">

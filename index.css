@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+
 .partner_logo {
     filter: grayscale(100%);
     transition: all 0.3s ease-in-out;
