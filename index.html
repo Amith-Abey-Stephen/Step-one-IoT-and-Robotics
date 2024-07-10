@@ -30,77 +30,52 @@
 <body>
 
   <!-- Nav -->
-  <nav
-    class="bg-gradient-to-bl from-stone-900	fixed to-slate-800  w-full z-50 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+  <nav class="bg-gradient-to-bl from-stone-900 to-slate-800 fixed w-full z-50 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="assets/inovuslogo.png" class="h-11" alt="Flowbite Logo">
-        <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Inovus Labs IEDC</span> -->
+        <img src="assets/inovuslogo.png" class="h-11" alt="Inovus Labs IEDC Logo">
       </a>
+
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-
-
-        <button data-collapse-toggle="navbar-sticky"
+        <button type="button"
+          class="text-white bg-gradient-to-tr from-stone-900 to-slate-800 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+          <a href="https://forms.gle/8UrELjJmfnB1KkLs6">Register Now</a>
+        </button>
+        <button id="navbar-toggle" data-collapse-toggle="navbar-sticky"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-sticky-menu" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14" id="menu-icon">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
           </svg>
+          <svg class="w-5 h-5 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="close-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
         </button>
-        <div id="navbar-sticky-menu" class="hidden md:flex md:w-auto md:order-1">
-          <!-- Your menu items here -->
-          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-            <li><a href="#" class="block py-2 px-3 text-white bg-secondary-700 hover:text-secondary rounded md:bg-transparent md:p-0 "
-                aria-current="page">Home</a></li>
-            <li><a href="#about"
-                class="block py-2 px-3 text-white bg-secondary-700 hover:text-secondary rounded md:bg-transparent md:p-0  ">About
-                Us</a></li>
-            <li><a href="#event"
-                class="block py-2 px-3 text-white bg-secondary-700 hover:text-secondary rounded md:bg-transparent md:p-0 ">About
-                Event</a></li>
-            <li><a href="#schedule"
-                class="block py-2 px-3 text-white bg-secondary-700 hover:text-secondary rounded md:bg-transparent md:p-0 ">Schedules</a>
-            </li>
-            <li><a href="#locate"
-                class="block py-2 px-3 text-white bg-secondary-700 hover:text-secondary rounded md:bg-transparent md:p-0 ">Locate</a>
-            </li>
-          </ul>
-        </div>
-
-
-
-
       </div>
+
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul
-          class="flex flex-col p-4 md:p-0 mt-4 font-medium  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
           <li>
-            <a href="#"
-              class="block py-2 px-3 text-white bg-blue-700 hover:text-secondary rounded md:bg-transparent md:p-0 "
-              aria-current="page">Home</a>
+            <a href="#" class="block py-2 px-3 text-white hover:text-secondary rounded md:bg-transparent md:p-0 mobile-link" aria-current="page">Home</a>
           </li>
           <li>
-            <a href="#about"
-              class="block py-2 px-3 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary text-white ">About Us</a>
+            <a href="#about" class="block py-2 px-3 text-white hover:text-secondary md:hover:bg-transparent md:hover:text-secondary md:p-0 mobile-link">About Us</a>
           </li>
           <li>
-            <a href="#event"
-              class="block py-2 px-3 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary text-white">About Event</a>
+            <a href="#event" class="block py-2 px-3 text-white rounded hover:text-secondary md:hover:bg-transparent md:hover:text-secondary md:p-0 mobile-link">About Event</a>
           </li>
           <li>
-            <a href="#schedule"
-              class="block py-2 px-3 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary text-white">Schedules</a>
+            <a href="#schedule" class="block py-2 px-3 text-white rounded hover:text-secondary md:hover:bg-transparent md:hover:text-secondary md:p-0 mobile-link">Schedules</a>
           </li>
           <li>
-            <a href="#locate"
-              class="block py-2 px-3 rounded hover:bg-secondary md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-secondary text-white">Locate</a>
+            <a href="#locate" class="block py-2 px-3 text-white rounded hover:text-secondary md:hover:bg-transparent md:hover:text-secondary md:p-0 mobile-link">Locate</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
-  
+  </nav>   
+
   <!-- landing -->
   <div class="relative h-screen overflow-hidden">
     <!-- Video background -->
@@ -130,7 +105,7 @@
                 clip-rule="evenodd"></path>
             </svg>
           </a> -->
-          <a href="#"
+          <a href="https://forms.gle/8UrELjJmfnB1KkLs6"
             class="inline-flex justify-center items-center py-3 px-8 text-base font-medium text-center rounded-lg border border-gray-300 bg-gradient-to-tr from-stone-900	 to-slate-800 hover:bg-gradient-to-bl from-stone-900	to-slate-800 focus:ring-4 focus:ring-gray-100 text-white dark:border-gray-700 ">
             <!-- <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -159,9 +134,10 @@
       <div class="mt-4 md:mt-0">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">About Us</h2>
         <h2 class="mb-4 text-3xl tracking-tight text-secondary">Inovus Labs IEDC</h2>
-        <p class="mb-6 font-light  md:text-lg text-gray-400">We're a team of students who define education as doing
-          challenging and unconventional things, which eventually push the boundaries of the traditional way. 
-          In doing so, we uphold the promise of broadening our descendants' horizons, which is far better than anything else.</p>
+        <p class="mb-6 font-light  md:text-lg text-gray-400">We’re a team of students defines education as doing challenging and unconventional things,
+           which eventually push the boundaries of traditional way. While doing this, we keep the promise of marking our descendants to wide their
+            horizons way better than us.
+        </p>
         <a href="https://inovuslabs.org/"
           class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
           For more
@@ -178,12 +154,13 @@
   <section class="bg-gradient-to-tr from-stone-900	to-slate-800" id="event">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <h1 class="mb-4 text-4xl font-extrabold text-white px-5 pt-10 text-center">About <span class="text-secondary">StepOne</span></h1>
-        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias tempore repudiandae sed neque, temporibus alias libero quo culpa laboriosam, possimus illum fugiat quaerat nobis incidunt nesciunt voluptatum omnis ex consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptates omnis, hic enim atque obcaecati dignissimos recusandae, vero ex nesciunt sapiente asperiores dolores aliquid earum fugiat sed vel. Maiores, architecto.</p>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Are you a newbie to the world of electronics, IOT and embedded system. Are you curious to learn prototypes and DIY projects. Do you often need a kickstart a career in IOT and Arduino. Then this event is completely for you. When a kid wants to study electronics what should we do? Give them some LED’s and motors not a thick book of theory of electronics. This is the first step towards the world of microcontrollers and creating really cool stuffs in IOT. The event help you to delve into the nuances of IOT and embedded system. 
+        </p>
     </div>
 </section>
-  <!-- about event shedule -->
+  <!-- event shedule -->
   <section class="bg-gradient-to-br from-stone-900	to-slate-800" id="schedule">
-    <h1 class="p text-4xl font-extrabold text-white px-5 pt-10 text-center"><span class="text-secondary">About</span> Event schedule</h1>      
+    <h1 class="p text-4xl font-extrabold text-white px-5 pt-10 text-center"><span class="text-secondary">Event</span> schedule</h1>      
     <div class="py-8 px-4 sm:py-16 lg:px-6 md:items-center justify-center flex">
       <ol class="relative border-s border-gray-200 dark:border-gray-700">
         <li class="mb-10 ms-4">
@@ -192,8 +169,8 @@
           </div>
           <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">9:30 AM</time>
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Check-in</h3>
-          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including
-            a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Registered participants should complete check-in at the registration desk by 9:30 AM on campus.
+          </p>
         </li>
         <li class="mb-10 ms-4">
           <div
@@ -201,8 +178,8 @@
           </div>
           <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">10:30 AM</time>
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Inaugural address</h3>
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first
-            designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Presidential address  and welcome speech by the Principal and Nodal officer
+          </p>
         </li>
         <li class="mb-10 ms-4">
           <div
@@ -210,8 +187,8 @@
           </div>
           <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">10:45 AM</time>
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Speakers Time</h3>
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components
-            and interactive elements built on top of Tailwind CSS.</p>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Inspirational talk by an expert on the importance of electronics and embedded system in today's world.
+          </p>
         </li>
         <li class="ms-4 mb-10">
           <div
@@ -219,8 +196,8 @@
           </div>
           <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">11:45 AM</time>
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Basic About IoT</h3>
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components
-            and interactive elements built on top of Tailwind CSS.</p>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Interactive session covering fundamental concepts of IOT
+          </p>
         </li>
         <li class="ms-4 mb-10">
           <div
@@ -228,8 +205,8 @@
           </div>
           <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">12:00 Noon</time>
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Detailed session about sensors and other things</h3>
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components
-            and interactive elements built on top of Tailwind CSS.</p>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Practical experience on sensors and it’s uses
+          </p>
         </li>
         <li class="ms-4 mb-10">
           <div
@@ -237,8 +214,7 @@
           </div>
           <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">1:00 PM</time>
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Lunch Time</h3>
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components
-            and interactive elements built on top of Tailwind CSS.</p>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Lunch</p>
         </li>
         <li class="ms-4 mb-10">
           <div
@@ -246,8 +222,8 @@
           </div>
           <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2:00 PM</time>
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Hands On Project</h3>
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components
-            and interactive elements built on top of Tailwind CSS.</p>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Detailed session on more Arduino Platform.
+          </p>
         </li>
         <li class="ms-4 mb-10">
           <div
@@ -255,8 +231,7 @@
           </div>
           <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">4:00 PM</time>
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Vote of Thanks</h3>
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components
-            and interactive elements built on top of Tailwind CSS.</p>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Concluding remarks, vote of thanks, and group photo session.</p>
         </li>
       </ol>
 
@@ -383,24 +358,68 @@
       </div>
     </div>
 </footer>
+<script>
+  document.getElementById('navbar-toggle').addEventListener('click', function (event) {
+      var navbar = document.getElementById('navbar-sticky');
+      var menuIcon = document.getElementById('menu-icon');
+      var closeIcon = document.getElementById('close-icon');
+      var toggleButton = document.getElementById('navbar-toggle');
 
+      if (navbar.classList.contains('hidden')) {
+          navbar.classList.remove('hidden');
+          menuIcon.classList.add('hidden');
+          closeIcon.classList.remove('hidden');
+          document.addEventListener('click', handleClickOutside, true);
+      } else {
+          navbar.classList.add('hidden');
+          menuIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+          document.removeEventListener('click', handleClickOutside, true);
+      }
 
-<script>// Example JavaScript/jQuery code for toggle functionality
-  document.addEventListener('DOMContentLoaded', function() {
-  var toggleButton = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
-  var menu = document.getElementById('navbar-sticky-menu');
-  
-  if (toggleButton && menu) {
-    toggleButton.addEventListener('click', function() {
-      var expanded = this.getAttribute('aria-expanded') === 'true' || false;
-      
-      this.setAttribute('aria-expanded', !expanded); // Toggle aria-expanded attribute
-      menu.classList.toggle('hidden'); // Toggle 'hidden' class on the menu
-    });
+      // Add CSS to remove outline
+      toggleButton.style.outline = 'none';
+
+      event.stopPropagation();
+  });
+
+  // Hide navbar on scroll
+  window.addEventListener('scroll', function () {
+      var navbar = document.getElementById('navbar-sticky');
+      if (!navbar.classList.contains('hidden')) {
+          navbar.classList.add('hidden');
+          document.getElementById('menu-icon').classList.remove('hidden');
+          document.getElementById('close-icon').classList.add('hidden');
+          document.getElementById('navbar-toggle').style.outline = 'none'; // Remove outline
+      }
+  });
+
+  // Hide navbar on link click
+  document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', function () {
+          var navbar = document.getElementById('navbar-sticky');
+          navbar.classList.add('hidden');
+          document.getElementById('menu-icon').classList.remove('hidden');
+          document.getElementById('close-icon').classList.add('hidden');
+          document.getElementById('navbar-toggle').style.outline = 'none'; // Remove outline
+          document.removeEventListener('click', handleClickOutside, true);
+      });
+  });
+
+  function handleClickOutside(event) {
+      var navbar = document.getElementById('navbar-sticky');
+      var toggleButton = document.getElementById('navbar-toggle');
+
+      if (!navbar.contains(event.target) && !toggleButton.contains(event.target)) {
+          navbar.classList.add('hidden');
+          document.getElementById('menu-icon').classList.remove('hidden');
+          document.getElementById('close-icon').classList.add('hidden');
+          document.getElementById('navbar-toggle').style.outline = 'none'; // Remove outline
+          document.removeEventListener('click', handleClickOutside, true);
+      }
   }
-});
+</script>
 
-  </script>
 </body>
 
 </html>
